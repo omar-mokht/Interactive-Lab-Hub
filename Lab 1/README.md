@@ -3,6 +3,10 @@
 # Staging Interaction
 
 \*\***NAME OF COLLABORATORS HERE**\*\*
+- Siddharth Kothari (SK2793)
+- Yifan Zhou (YZ2889)
+- Tahmid Kazi (TK596)
+- Omar Mohamed (OM84)
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -59,23 +63,42 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
-
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+### <u>CrispSense: The food freshness label</u>
+<b>Setting:</b> The user opens a refrigerator in a kitchen to see what ingredients they have for cooking their next meal.
+
+<b>Players:</b> The refrigerator and the user
+
+<b>Activity:</b> The user opens the refrigerator and immediately sees visual labels that make it easy to tell apart fresh food from stale food, and those foods about to expire.The label for the items that have expired turn ‘red’ while those about to expire turn orange, and the fresh food is labeled green.
+
+<b>Goals:</b> To visually tell apart food items based on their freshness to allow user to make conscious decisions thereby reducing food wastage.
+
+### <u>LeafSpeak: The plant’s voice</u>
+
+<b>Setting:</b> A plant and a caretaker in a nursery on a bright sunny morning.
+
+<b>Players:</b> The plant and its caretaker
+
+<b>Activity:</b> The LeafSpeak device, positioned in the soil, shifts its color to blue as soon as it identifies the plant's thirst for water. In a plantation or nursery, numerous plants may demand varying amounts of water. These devices individually shift to a 'blue' hue when the particular plant requires hydration, transitioning to green once the water supply suffices, and to black if overwatering occurs. Furthermore, an orange hue emerges when a plant or tree is ripe for harvesting, while a yellow glow signifies the need for increased sunlight.
+
+<b>Goals:</b> To notify the plant’s caretaker about its water/sunlight needs.
+
+### <u>TeamWiz: Your digital assistant to make fair teams</u>
+
+<b>Setting:</b> A table with TeamWiz devices outside a Soccer field with players waiting in a queue to enter the field.
+
+<b>Players:</b> A group of eight players
+
+<b>Activity:</b> A group of players queue up to pick up their TeamWiz devices. As soon as a TeamWiz device is picked up it turns red or blue indicating which team (red or blue) the user belongs to.
+Additionally, should a player or two have to leave the game midway, all TeamWiz devices would blink-change their colors and re-distribute the team for fair play.
+
+<b>Goals:</b> To divide a group of players into teams without any biases.
+
 
 \*\***Include pictures of your storyboards here**\*\*
+![storyboards](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/2f66a7f5-b5a3-4696-a642-c871610ff75e)
+
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
@@ -102,12 +125,14 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
-
+Tinkerbelle does what its made for! It would be amazing to have a feature that allows one to record and replay a sequence of colors!
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
+
+https://youtu.be/ASheoEyk49Y
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
@@ -116,18 +141,24 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
 \*\***Include sketches of what your devices might look like here.**\*\*
+
+![buildInProgress](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/66b61f0f-2d52-4334-b7e4-820d4df61c0b)
+
+![PlantSpeak](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/c7b0b178-9344-433c-98d9-163bdd76406c)
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+We wanted the device to look 'small' and 'self-contained'. We wouldn't want a garden to have too many visible digital elements shadwing the greenery. While the size of the phone is restricting, the two white covers make the device look capuslar. 
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+
+[![LeafSpeak Demo](https://img.youtube.com/vi/ASheoEyk49Y/0.jpg)](https://www.youtube.com/watch?v=ASheoEyk49Y)
+
+https://youtu.be/ASheoEyk49Y
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
