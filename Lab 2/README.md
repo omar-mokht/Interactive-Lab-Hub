@@ -209,11 +209,53 @@ After you edit and work on the scripts for Lab 2, the files should be upload bac
 
 After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
 
+## The Planet Clock ! !
+### The idea
+As people like Elon Musk pushing humanity to become multi-planetary, we needed an upgrade of our current time-keeping system. Specifically transforming from "world clock" to "planet clock". Which tells time on other planets so that people from different planets can syncup their time. 
+
+With this idea, I cretated the planet clock which uses a proposed algorithm to translate current time on earth to current time on other planets.
+
+For usability, this clock will display two format of the time:
+- (1) The time on the planet scaled to 0-24 hour format on earth.
+- (2) The unscaled time of this planet using earth hour/min/sec format.
+
+### Sketch 
+
+### Time Conversion Algorithms 
+For the purpose of this demo, I first employed NASA's time keeping method for their Mars Rovers. And for simplicity, I have ignored the timezones of each planet, and calculate one single standard time for each planet in the solar system. 
+
+The algorithm assumes a "zero-day" which all clocks on each planet will start synchronously. This day is hard coded to 2000-1-1 at 00:00:00.
+
+Everytime the planet time is being queried. The algorithm will first computer **t<sub>c</sub>**, the total seconds elapsed since zero-day. 
+
+Denote the total seconds in a day on each planet as **t<sub>p</sub>**
+
+Then, the **unscaled time** on each planet is as follows:
+- Current Hour = **t<sub>c</sub> % t<sub>p</sub> // 3600**
+- Current Minute = **t<sub>c</sub> % t<sub>p</sub> % 3600 // 60**
+- Current Second = **t<sub>c</sub> % t<sub>p</sub> % 3600 % 60**
+
+The **scaled time** on each planet is the same, but we compute a scaled **t<sub>c</sub>** with the following process:
+- **t<sub>c_scaled</sub>** = **t<sub>c</sub> * (86400 / t<sub>p</sub>)**
+
+For a more intuitive understanding of the clock, here is a picture demo:
+### Picture demo 
+![image](readme_img/part1demopic.png)
+![image](readme_img/function1.png)
+![image](readme_img/function2.png)
+![image](readme_img/example1.png)
+![image](readme_img/example2.png)
+
 
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+
+https://drive.google.com/file/d/104rPhgUjhkfQ-NPxlcUgzCDS9zKPjuBK/view?usp=share_link
+
+The code for modified PiClock can be found here:
+[part1_newclock.py](part1_newclock.py)
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
