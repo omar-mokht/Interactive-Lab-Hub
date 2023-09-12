@@ -57,7 +57,7 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 40)
-bigfont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 100)
+smallfont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 20)
 
 # smallfont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 50)
 
@@ -107,36 +107,22 @@ dir = 1
 seconds = 0
 incrementx = width/10
 incrementy = height/6
-doty = -incrementy
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0,fill=(0,0,0))
-    # y = (top+bottom)/3
-    # incrementx = width/10
-    # incrementy = height/6
-    # dotx -= incrementx
-    # draw.text((x,y),strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True, font=font, fill="#FFFFFF")
-    # # Display image.
     if not buttonA.value:
         seconds = 0
         dotx = 0
         doty = 0
-        dir = 1
-        seconds = 0
         incrementx = width/10
         incrementy = height/6
-        doty = -incrementy
-    draw.text((dotx,doty), ".",font=font, fill="#FFFFFF" )
+    draw.text((dotx,doty), "T",font=smallfont, fill="#FFFFFF" )
     if dotx >= width:
         doty += incrementy
         dotx = 0
     if seconds % 10 == 0:
-        # print("hi")
-        # draw.rectangle((0, 0, width, height), outline=0,fill=400)
         draw.rectangle((0, 0, width, height), outline=0,fill = (0,0,0))
-
         draw.text((width/3+20,height/3), str(seconds), font=font, fill="#00FF00")
-        # time.sleep(1)
     if seconds == 60:
         seconds = 0
         dotx = 0
@@ -145,35 +131,7 @@ while True:
         seconds = 0
         incrementx = width/10
         incrementy = height/6
-        doty = -incrementy
-
     seconds +=1
-    # if doty >= height-incrementy:
-    #     doty = 0
-        # dotx = 0
-    print(str(dotx) + "," + str(doty))
     dotx += incrementx
     disp.image(image, rotation)
-    time.sleep(0.1)
-
-   
-   
-   
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    # t = time.strftime("%H:%M:%S")
-    # hour, m, sec = t.split(':')
-    # hour = int(hour)
-    # tmin = hour * 60 + int(m)
-    # colval = int(255 - 255/720 * (abs(720 - tmin)))
-    # if buttonB.value and not buttonA.value:  # just button A pressed
-    #     draw.text((x, top), t, font=font, fill="#FFFFFF")
-    # if buttonA.value and not buttonB.value:  # just button B pressed
-    #     rtmin = random.randint(0, 1439)
-    #     colval = int(255 - 255/720 * (abs(720 - rtmin)))
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=(colval, colval, colval))
-    #     draw.text((x, top), str(rtmin), font=font, fill="#FFFFFF")
-    #     time.sleep(1)
-    # if buttonA.value and buttonB.value: #nothing is pressed
-    #     #display color
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=(colval, colval, colval))
-    #     draw.text((x, (top + bottom) / 2), str(t), font=font, fill="#FFFFFF")
+    time.sleep(1)
