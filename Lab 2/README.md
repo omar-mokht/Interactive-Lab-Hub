@@ -269,6 +269,12 @@ The code for modified PiClock can be found here:
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+Further optimization for the clock might be:
+- Adding Weather forecasts on each planet
+- Adding support for moon and other planet's moons
+- Adding clock for planets near Blackhole (potential new timing algorithms!)
+- And Finally, adding support for clock on black holes : )
+
 
 # Prep for Part 2
 
