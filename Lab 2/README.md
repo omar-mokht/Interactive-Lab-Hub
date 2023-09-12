@@ -160,6 +160,12 @@ You can look in `screen_boot_script.py` and `stats.py` for how to display text o
 You can look in `image.py` for an example of how to display an image on the screen. Can you make it switch to another image when you push one of the buttons?
 
 
+Link to the video: 
+https://drive.google.com/file/d/1EbQD0pb_vILj1phdBRNZnQprQ4qAr98P/view?usp=share_link
+![image](readme_img/img1.png)
+![image](readme_img/img2.png)
+
+
 
 ## Part D. 
 ### Set up the Display Clock Demo
@@ -184,6 +190,8 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 Option 3. A nowadays often preferred method is to use Microsoft [VS code to remote connect to the Pi](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/). This gives you access to a fullly equipped and responsive code editor with terminal and file browser.  
 
 Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/latest) you can even setup a VS Code coding environment hosted on your raspberry pi and code through a web browser on your tablet or smartphone! 
+
+![image](readme_img/clock.png)
 
 ## Part E.
 ### Modify the barebones clock to make it your own
@@ -220,6 +228,7 @@ For usability, this clock will display two format of the time:
 - (2) The unscaled time of this planet using earth hour/min/sec format.
 
 ### Sketch 
+![image](readme_img/sketch.jpeg)
 
 ### Time Conversion Algorithms 
 For the purpose of this demo, I first employed NASA's time keeping method for their Mars Rovers. And for simplicity, I have ignored the timezones of each planet, and calculate one single standard time for each planet in the solar system. 
