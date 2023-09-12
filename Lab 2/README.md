@@ -232,7 +232,7 @@ Link to video: https://youtu.be/zzyk1U6yFJo
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
 ![IMG_4210](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/b296009a-d39a-430d-be16-96c25649b1bf)
-I might change the whole idea for part 2 or I might add minutes and hours in. So, for instance, instead of t, it will be the minutes and the colour of the screen would be the hour. Maybe I can put an image to change evry hour to represent current hour.
+I might change the whole idea for part 2 or I might add minutes and hours in. So, for instance, instead of T, it will be the minutes and the colour of the screen would be the hour. Maybe I can put an image to change every hour to represent current hour.
 
 
 # Prep for Part 2
