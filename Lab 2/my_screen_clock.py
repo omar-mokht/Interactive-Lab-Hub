@@ -59,7 +59,6 @@ x = 0
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 40)
 smallfont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 20)
 
-# smallfont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 50)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -70,36 +69,7 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-# if disp.rotation % 180 == 90:
-#     height = disp.width  # we swap height/width to rotate it to landscape!
-#     width = disp.height
-# else:
-#     width = disp.width  # we swap height/width to rotate it to landscape!
-#     height = disp.height
-# image = Image.new("RGB", (width, height))
 
-# draw = ImageDraw.Draw(image)
-
-# # Draw a black filled box to clear the image.
-# draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-# disp.image(image)
-
-# image = Image.open("red.jpg")
-
-# image_ratio = image.width / image.height
-# screen_ratio = width / height
-# if screen_ratio < image_ratio:
-#     scaled_width = image.width * height // image.height
-#     scaled_height = height
-# else:
-#     scaled_width = width
-#     scaled_height = image.height * width // image.width
-# image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
-
-# # Crop and center the image
-# x = scaled_width // 2 - width // 2
-# y = scaled_height // 2 - height // 2
-# image = image.crop((x, y, x + width, y + height))
 
 dotx = 0
 doty = 0
