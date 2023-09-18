@@ -200,6 +200,11 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 
 Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
+![IMG_4206](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/197ee736-8aaa-4f10-a61f-e448ccb3871f)
+
+![IMG_4207](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/3cd9165f-f02d-4ae0-a91e-9457506b3972)
+
+
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
 
@@ -219,10 +224,15 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
+Link to video: https://youtu.be/zzyk1U6yFJo
+
 \*\*\***Take a video of your PiClock.**\*\*\*
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+
+![IMG_4210](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/b296009a-d39a-430d-be16-96c25649b1bf)
+I might change the whole idea for part 2 or I might add minutes and hours in. So, for instance, instead of T, it will be the minutes and the colour of the screen would be the hour. Maybe I can put an image to change every hour to represent current hour.
 
 
 # Prep for Part 2
