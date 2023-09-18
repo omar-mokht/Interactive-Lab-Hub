@@ -275,9 +275,6 @@ Further optimization for the clock might be:
 - Adding clock for planets near Blackhole (potential new timing algorithms!)
 - And Finally, adding support for clock on black holes : )
 
-## Part 1 Feedback
-The switch between each planet looks very smooth, and I love how you chose the combination of the colors showing on each planet. It is interesting to see the planet of hours and the transition to 24-hour format. 
-
 
 # Prep for Part 2
 
@@ -285,6 +282,12 @@ The switch between each planet looks very smooth, and I love how you chose the c
   
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+
+## Part 1 Feedback
+The switch between each planet looks very smooth, and I love how you chose the combination of the colors showing on each planet. It is interesting to see the planet of hours and the transition to 24-hour format. 
+
+Very cool animations, I like how you designed the transition and the illustration makes alot of sense. the button interaction is also great. It would be better if you make a note to show which time version is currently used.
+
 
 # Lab 2 Part 2
 
