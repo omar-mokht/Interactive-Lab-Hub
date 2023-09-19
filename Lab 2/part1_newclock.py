@@ -188,8 +188,13 @@ def transition(id):
         
         disp.image(image, rotation)
         
-        current_x -= 50
-        prev_x -= 50
+        # current_x -= 50
+        # prev_x -= 50
+        current_x -= int( (current_x - (-95)) * 2/5 )
+        prev_x -= int( (current_x - (-95)) * 2/5 )
+        
+        if int( (current_x - (-95)) * 2/5 ) < 2:
+            break
         sleep(0.05)
     
 
