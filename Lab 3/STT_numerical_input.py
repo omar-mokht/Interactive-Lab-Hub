@@ -3,6 +3,7 @@ import queue
 import sys
 import sounddevice as sd
 import json
+import subprocess
 
 from vosk import Model, KaldiRecognizer
 
@@ -70,6 +71,7 @@ with sd.RawInputStream(samplerate=samplerate, blocksize = 8000, device=1,
     
     # track recognition success
     print("How old are you?")
+    subprocess.check_output('./speech-scripts/googletts_arg.sh "how old are you"', shell=True, stderr=subprocess.PIPE, universal_newlines=True)
     success = False
     age = 0
     while not success:
@@ -86,5 +88,8 @@ with sd.RawInputStream(samplerate=samplerate, blocksize = 8000, device=1,
             except:
                 # print(recognition)
                 print('Sorry, Please say a number only.')
-        
+    
+    reply = f'I got it, your age is {age} !'
     print(f'I got it, your age is {age} !')
+    subprocess.check_output(f'./speech-scripts/googletts_arg.sh "{reply}"', shell=True, stderr=subprocess.PIPE, universal_newlines=True)
+
