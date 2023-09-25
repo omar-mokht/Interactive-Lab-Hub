@@ -75,7 +75,7 @@ You can also play audio files directly with `aplay filename`. Try typing `aplay 
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
 (This shell file should be saved to your own repo for this lab.)
 
-[Link to shell file](\speech-scripts\GoogleTTS_saymyName.sh)
+[Link to shell file](./speech-scripts/GoogleTTS_saymyName.sh)
 
 ---
 Bonus:
@@ -118,7 +118,7 @@ python test_microphone.py -m en
 
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
 
-[Link to shell file](\speech-scripts\STT_numerical_input.py)
+[Link to shell file](./speech-scripts/STT_numerical_input.py)
 
 ### Serving Pages
 
