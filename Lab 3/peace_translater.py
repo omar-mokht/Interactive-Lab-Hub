@@ -4,8 +4,11 @@ import sys
 import sounddevice as sd
 import json
 import subprocess
-
 from vosk import Model, KaldiRecognizer
+
+import openai
+openai.api_key = "YOUR API KEY (HIDDEN FOR COMMIT)"
+
 
 q = queue.Queue()
 
@@ -26,9 +29,31 @@ def callback(indata, frames, time, status):
 def process_sentence(sentence):
     return f'[Post Processed] {sentence}'
 
+
+def translate_text(text):
+    #prompt = (f"Rewrite the following text to be very humble, polite, and politically correct:\n"
+              #f"text: {text}\n")
+    prompt = (f"You are a peace translater, I will provide you with a text containing angry ang negative sentiments. And you will translate that text to a positive, friendly, constructive, and polite tone without any swear words:\n"
+              f"text: {text}\n"
+              f"Your translation of this text: \n")
+
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        #engine="gpt-3.5-turbo",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+
+    # print(response.choices)
+    peaceful_text = response.choices[0].text.strip()
+    return peaceful_text
+
 def speak_sentence(sentence):
     subprocess.check_output(f'./speech-scripts/googletts_arg.sh "{sentence}"', shell=True, stderr=subprocess.PIPE, universal_newlines=True)
-
+    sentence = ''
     
 device_info = sd.query_devices(None, "input")
 # soundfile expects an int, sounddevice provides a float:
@@ -49,7 +74,7 @@ with sd.RawInputStream(samplerate=samplerate, blocksize = 8000, device=1,
             recognition = json.loads(rec.Result())["text"]
             print(recognition)
             # print(rec.Result())
-            processed_sentence = process_sentence(recognition)
+            processed_sentence = translate_text(recognition)
             print(processed_sentence)
             speak_sentence(processed_sentence)
         else:
