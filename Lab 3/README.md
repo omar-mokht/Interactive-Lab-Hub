@@ -171,8 +171,11 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+   We did not account for continuous speech where the user keeps speaking angry speech and the translator keeps translating, so we are planning on having the device to take multiple sentences and instances of a conversation.
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+   Body Language, hand gestures and facial expression will be used to demonstrate rage and offensive language being used.
 3. Make a new storyboard, diagram and/or script based on these reflections.
+Our storyboard still conveys how the system works, but we only changing the way of implementation based on feedback, so that's why the storybaord is the same.
 ![storyboard](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/8ae5829b-ee72-48ab-86e4-f7e97bf534f0)
 
 
