@@ -173,6 +173,8 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
 3. Make a new storyboard, diagram and/or script based on these reflections.
+![storyboard](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/8ae5829b-ee72-48ab-86e4-f7e97bf534f0)
+
 
 ## Prototype your system
 
@@ -183,7 +185,18 @@ The system should:
 
 *Document how the system works*
 
+The Pi is connected to a mic and a speaker where it takes input from an angry person and switches the speech to a more polite, peaceful and considerate output. It is for people who have anger management problem and always fall into problems after losing temper. This device can be connected to your phone to switch what you say to more positive output. 
+
+Tehcnical Details:
+We have used the STT and TTS learned form lab 3a to take in input as speech from user, process it and then outputs it through google TTS as it had the highest quality. 
+The processing here is where the most work was done where we take the speech and pass it to chatGPT using Open AI API where we gave it a prompt to switch the speech to a polite and positive speech and it takes the input as tokens and applies the prompt to the speecha and then returns the ChatGPT output.
+
+
 *Include videos or screencaptures of both the system and the controller.*
+
+![IMG_5200](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/5d4eeb88-cacc-4037-adbe-493347bafece)
+![IMG_5201](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/5391dcc3-9fe1-49c0-9735-d955fa18e6a9)
+
 
 Link to Video: https://youtu.be/ynewPokMy3Y
 
@@ -194,18 +207,18 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+\*\**The system takes in the speech relatively well from native speakers and it does pass everything to ChatGPT. The problem we faced is inconsistency where the ChatGPT conversion of speech is unrelaible and sometimes outputs something random or doesn't completely change the speech to a peaceful one where it includes in the output the hate or offensive words it is given*\*\*
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+\*\**The controller is unreliable and Sometimes gives or take wrong information, but unpredictability is what makes it funnny and enjoyable. what worked well is, the controller is smart enough to detect bad words and switch to positive words. *\*\*
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
+\*\**To make it more autonomous, we learned that we need to a way for the code to take input while processing the previous input as the current setup allows for one input and then processing and then another input, so it makes it less continuous.*\*\*
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+\*\**We can output the conversations that happen to a text file and have them divided by angry subject and peaceful subject to see how the data pans out. We can use a camera to capture someone's emotions to detect angry speech and process it to be peaceful.*\*\*
 
