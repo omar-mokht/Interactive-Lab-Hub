@@ -171,11 +171,11 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-   We did not account for continuous speech where the user keeps speaking angry speech and the translator keeps translating, so we are planning on having the device to take multiple sentences and instances of a conversation.
+We did not account for continuous speech, where the user keeps speaking angry speech and the translator keeps translating, so we are planning on having the device take multiple sentences and instances of a conversation.
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-   Body Language, hand gestures and facial expression will be used to demonstrate rage and offensive language being used.
+Body language, hand gestures, and facial expressions will be used to demonstrate rage, and offensive language will be used.
 3. Make a new storyboard, diagram and/or script based on these reflections.
-Our storyboard still conveys how the system works, but we only changing the way of implementation based on feedback, so that's why the storybaord is the same.
+Our storyboard still conveys how the system works, but we only change the way of implementation based on feedback, so that's why the storyboard is the same.
 ![storyboard](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/8ae5829b-ee72-48ab-86e4-f7e97bf534f0)
 
 
@@ -188,11 +188,11 @@ The system should:
 
 *Document how the system works*
 
-The Pi is connected to a mic and a speaker where it takes input from an angry person and switches the speech to a more polite, peaceful and considerate output. It is for people who have anger management problem and always fall into problems after losing temper. This device can be connected to your phone to switch what you say to more positive output. 
+The Pi is connected to a mic and a speaker, where it takes input from an angry person and switches the speech to a more polite, peaceful, and considerate output. It is for people who have anger management problems and always fall into problems after losing their temper. This device can be connected to your phone to switch what you say to a more positive output.
 
 Tehcnical Details:
-We have used the STT and TTS learned form lab 3a to take in input as speech from user, process it and then outputs it through google TTS as it had the highest quality. 
-The processing here is where the most work was done where we take the speech and pass it to chatGPT using Open AI API where we gave it a prompt to switch the speech to a polite and positive speech and it takes the input as tokens and applies the prompt to the speecha and then returns the ChatGPT output.
+We have used the STT and TTS learned from Lab 3a to take in input as speech from the user, process it, and then output it through Google TTS, as it had the highest quality.
+The processing here is where the most work was done, where we take the speech and pass it to ChatGPT using the Open AI API, where we gave it a prompt to switch the speech to a polite and positive speech, and it takes the input as tokens, applies the prompt to the speech, and then returns the ChatGPT output.
 
 
 *Include videos or screencaptures of both the system and the controller.*
@@ -210,18 +210,18 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**The system takes in the speech relatively well from native speakers and it does pass everything to ChatGPT. The problem we faced is inconsistency where the ChatGPT conversion of speech is unrelaible and sometimes outputs something random or doesn't completely change the speech to a peaceful one where it includes in the output the hate or offensive words it is given*\*\*
+\*\** The system takes in the speech relatively well from native speakers, and it does pass everything to ChatGPT. The problem we faced is inconsistency, where the ChatGPT conversion of speech is unrelatable and sometimes outputs something random or doesn't completely change the speech to a peaceful one, where it includes in the output the hate or offensive words it is given. *\*\*
 
 ### What worked well about the controller and what didn't?
 
-\*\**The controller is unreliable and Sometimes gives or take wrong information, but unpredictability is what makes it funnny and enjoyable. what worked well is, the controller is smart enough to detect bad words and switch to positive words. *\*\*
+\*\** The controller is unreliable and sometimes gives or takes the wrong information, but unpredictability is what makes it fun and enjoyable. What worked well is that the controller is smart enough to detect bad words and switch to positive ones. *\*\*
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**To make it more autonomous, we learned that we need to a way for the code to take input while processing the previous input as the current setup allows for one input and then processing and then another input, so it makes it less continuous.*\*\*
+\*\** To make it more autonomous, we learned that we need a way for the code to take input while processing the previous input, as the current setup allows for one input and then processing and then another input, so it makes it less continuous. *\*\*
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**We can output the conversations that happen to a text file and have them divided by angry subject and peaceful subject to see how the data pans out. We can use a camera to capture someone's emotions to detect angry speech and process it to be peaceful.*\*\*
+\*\** We can output the conversations that happen to a text file and have them divided by angry subject and peaceful subject to see how the data pans out. We can use a camera to capture someone's emotions to detect angry speech and process it to be peaceful. *\*\*
 
