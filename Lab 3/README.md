@@ -176,11 +176,11 @@ We did not account for continuous speech, where the user keeps speaking angry sp
 
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
 
-Body language, hand gestures, and facial expressions will be used to demonstrate rage, and offensive language will be used.
+Body language, hand gestures, and facial expressions will be used to demonstrate rage, and offensive language being used.
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
-Our storyboard still conveys how the system works, but we only change the way of implementation based on feedback, so that's why the storyboard is the same.
+Our storyboard still conveys how the system works, but we are only changing the implementation based on feedback, so that's why the storyboard is the same.
 ![storyboard](https://github.com/Monacrylic/Interactive-Lab-Hub/assets/44057927/8ae5829b-ee72-48ab-86e4-f7e97bf534f0)
 
 
