@@ -1,7 +1,10 @@
 # Ph-UI!!!
 
 **NAMES OF COLLABORATORS HERE**
-
+1. Siddharth Kothari - sk2793
+2. Yifan Zhou - yz2889
+3. Tahmid Kazi - tk596
+4. Omar Mohamed - om84
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
@@ -153,7 +156,6 @@ You can go to the [Adafruit Learn Page](https://learn.adafruit.com/adafruit-i2c-
 
 #### Joystick (optional)
 
-
 A [joystick](https://www.sparkfun.com/products/15168) can be used to sense and report the input of the stick for it pivoting angle or direction. It also comes with a button input!
 
 <p float="left">
@@ -195,15 +197,21 @@ Usually, sensors need to be positioned in specific locations or orientations to 
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+![storyboards](all_storyboards.jpeg)
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+- How will the Raspberry Pi be powered hidden in this context?
+- Where should the sensors and Raspberry Pi be stored such that these are not visible to the user?
+- How big should the interactive device be? How portable should the interactive device be?
+- Where should the screen be positioned?
+- How should the information on the small display be designed such that it maximizes readability?
+- How fun or amusing will users find these interactive devices? How long will they want to play for?
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
-
+We picked the guitar synthesizer because all of us have an affinity to music and wanted to recreate a digital version of our shared passion.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
-
-
 
 Here is a Pi with a paper faceplate on it to turn it into a display interface:
 
@@ -242,17 +250,30 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+![storyboards](all_storyboards.jpeg)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+- How to route the copper conductive pads to ensure proper functionality?
+- How to make the mechanical design structurally rigid enough so that we can use the device like a musical instrument?
+- How should the circuitry to the capacitive sensor be designed so as to minimize real estate and materials used?
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+We picked the one where the display was mounted on the raspberry pi (in the guitar sketch, the very first one)
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
-Build a cardboard prototype of your design.
+since we needed the screen to be close to the speaker and raspberry pi, in order to display the musical notes being outputted from the digital guitar, we picked the screen that was mounted on the raspberry pi
 
+Build a cardboard prototype of your design.
+![img1](img1.jpg)
 
 **\*\*\*Document your rough prototype.\*\*\***
+![img2](img2.JPG)
+![img3](img3.JPG)
+![img4](img4.JPG)
+![img5](img5.JPG)
+![img6](img6.JPG)
 
 
 LAB PART 2
@@ -260,6 +281,14 @@ LAB PART 2
 ### Part 2
 
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
+
+For Part 1 and 2 of the Lab, we built the guitar synthesizer using cardboard, the PiTFT display to show the real time note, copper conductive pads as touch sensor arrays and the Rasberry Pi with speakers and headphones out to produce the sound.
+"Looks like": shows how the device should look, feel, sit, weigh, etc.
+- for our device, it looks and feels like a mini ukulele (that's how we made the cu
+"Works like": shows what the device can do.
+- the device works like a digital guitar in the sense that it takes capacitive touch input and produces digital sounds.
+"Acts like": shows how a person would interact with the device.
+- for all intents and purposes, the person holds and interacts with it as someone would with a guitar or ukulele.
 
 ### Part E (Optional)
 ### Servo Control with Joystick
@@ -325,4 +354,11 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
+
+Our Recordings are shown below:
+
+https://drive.google.com/file/d/1HZIt_Em2LysmZRzfuyPaMjN1JxUhSKLg/view?usp=sharing
+
+https://drive.google.com/file/d/1-gdE8BexUPZDhIRQGsTD5SAPHoREejM9/view?usp=sharing
+
 
