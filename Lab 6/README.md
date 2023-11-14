@@ -132,7 +132,9 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+![battery_data](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/3b903ab5-6947-4e93-af0c-a7284a53ad3f)
 
+**Link**: https://youtu.be/6dvJKqHLT6k
 
 ### Part D
 ### The One True ColorNet
