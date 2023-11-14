@@ -174,11 +174,37 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+**MQTT HOT POTATO GAME!**
+
+This is a MQTT based Hot Potato + Trivia game, consisting of one host (game coordinator) and multiple clients (players). To start with, the host will randomly “throw” an explosive potato (yes it will explode within a randomly generated countdown) to a player, and display a list of trivia questions. Players will then compete the answer these questions by pressing buttons on their client device (raspberry pi), and the person that answers the wrong questions or is the slowest to respond will get the potato in the next round. 
+
+When the timer ends (player doesn’t know when), whoever holds the potato will be eliminated. 
+
+This is a fun game that supports any number of people, it is competitive and fun at the same time. And with the help of distributed MQTT network, anyone can join the game instantly with minimal setup. 
+
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
+![Slide1](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/ee2a8cd4-8225-494a-81bc-1acfbc04e51d)
+
+![Slide2](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/c6bfcff2-dd16-4eba-bdc9-019269c9a174)
+
+![Slide3](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/874b91bd-04e8-4da4-946a-b86189d42325)
+
+![Slide4](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/8af51bea-1610-4ffb-b327-83ddd020850b)
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+To bring the exhilarating game of Hot Potato into the digital realm, we've designed a dynamic prototype that merges technology with fun. This system centers around an MQTT host, running on a separate computer linked to a TV, creating an immersive visual experience. In our unique twist on the classic game, players engage in a fast-paced question-and-answer challenge. This setup becomes the heart of the game, showcasing both the intriguing questions and the players' responses in real-time on the screen. The excitement builds as the one who answers the slowest in each round finds themselves with the 'hot potato'
+
+At the core of player interaction are the personalized Raspberry Pi units, each equipped with intuitive buttons and displays. These devices are not just functional but also visually captivating. We've crafted detailed vector images for various screens, making the gameplay both clear and engaging. One of these screens cleverly illustrates the button layout, guiding players on how to interact seamlessly with the game. The highlight of the interface is the 'boom' screen – a vibrant display that dramatically indicates who is currently caught with the digital 'hot potato'.
+
+This user interface has been thoughtfully designed to be intuitive and engaging. Even if someone stumbled upon this device 'in the wild', they would find it inviting and easy to understand. It's designed to be self-explanatory, ensuring that players, regardless of their tech savvy, can dive right into the fun without confusion. The anticipation of the 'boom' and the thrill of the game are sure to create an unforgettable experience.
+
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+
+**Link**: https://youtu.be/x9wKcUHqADo
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
