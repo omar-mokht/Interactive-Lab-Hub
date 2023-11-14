@@ -39,7 +39,7 @@ parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
     parents=[parser])
 parser.add_argument(
-    "-f", "--filename", type=str, metavar="FILENAME",
+    "-f", "--filename", type=str, metavar="numberOutput.txt",
     help="audio file to store recording to")
 parser.add_argument(
     "-d", "--device", type=int_or_str,
