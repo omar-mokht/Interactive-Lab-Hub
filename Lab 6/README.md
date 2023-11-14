@@ -2,6 +2,12 @@
 
 **NAMES OF COLLABORATORS HERE**
 
+Siddharth Kothari - sk2793
+Neelraj Patil - njp75
+Yifan Zhou - yz2889
+Tahmid Kazi - tk596
+Omar Mohamed - om84
+
 ## Prep
 
 1. Pull the new changes from the class interactive-lab-hub. (You should be familiar with this already!)
