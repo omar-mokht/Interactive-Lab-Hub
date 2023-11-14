@@ -93,8 +93,17 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 <img width="890" alt="Screen Shot 2022-10-30 at 10 47 52 AM" src="https://user-images.githubusercontent.com/24699361/198885135-a1d38d17-a78f-4bb2-91c7-17d014c3a0bd.png">
 
-
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
+
+**Smart Home Control System**: Utilize MQTT to create a centralized control system for smart home devices like lights, thermostats, and security cameras. Users can send commands from a smartphone or computer to control these devices remotely. For example, turning off lights or adjusting the thermostat while away from home.
+
+**Health Monitoring System**: Implement a health monitoring system for elderly or patients with special needs. Sensors can collect data like heart rate, temperature, or movement, and send this information via MQTT to caregivers or medical professionals. This system can trigger alerts in case of abnormal readings, ensuring timely medical attention.
+
+**Industrial Automation**: In a manufacturing setting, MQTT can facilitate communication between different machines and sensors. This system can monitor machine performance, environmental conditions, or production progress, sending data to a central server. It can help in predictive maintenance, process optimization, and ensuring safety standards.
+
+**Retail Customer Engagement**: Use MQTT in retail environments to enhance customer experience. Interactive displays can provide product information, promotions, or personalized recommendations based on customer input or behavior. MQTT can also be used for inventory tracking, updating display items based on stock levels.
+
+**Educational Tools and Interactive Learning**: In an educational setting, MQTT can be used to create interactive learning experiences. For example, a science museum exhibit might include sensors and interactive displays where visitors' actions (like pressing a button or walking through a sensor-equipped doorway) trigger informative displays or change the exhibit in real-time.
 
 ### Part C
 ### Streaming a Sensor
@@ -117,7 +126,12 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
 
+![IMG_9180](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/3cc06f6a-8576-47bf-aa19-362a947b00e9)
+
+![IMG_9183](https://github.com/omar-mokht/Interactive-Lab-Hub/assets/111816253/b5e695c4-6f2b-4f60-8e65-2e1a080660f0)
+
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
+
 
 
 ### Part D
@@ -147,6 +161,8 @@ By running the script, wou will find the two squares on the display. Half is sho
 (A message from the previous TA, Ilan: I was not super careful with handling the loop so you may need to press more than once if the timing isn't quite right. Also, I haven't load-tested it so things might just immediately break when everyone pushes the button at once.)
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
+
+
 
 
 ### Part E
