@@ -134,9 +134,7 @@ At the same time, player class is instantiated and will spawn another thread in 
 In order to achieve reliability and efficiency, the angle of the hand tracking is achieved by finding the slope of the line segment formed between thumb and little finger. The process involves conversion to polar coordinates.
 
 
-# Gauntlet
-
-## Design
+# Gauntlet Design
 
 We have used:
 
@@ -144,6 +142,8 @@ We have used:
 
 ![](images/LEDMatrix.jpeg)
 
+to be worn like this:
+![](images/ledMatrix.JPG)
 2. Esp32-s2 (Feather Development Board) as our microcontroller because of its compact size.
 
 ![](images/esp32.png)
@@ -152,15 +152,17 @@ We have used:
 
 
 
-And Finally (with some hot glue and paper clips), we had this:
+<!-- And Finally (with some hot glue and paper clips), we had this:
 
- @Omar Insert image here
+ @Omar Insert image here -->
 
  The plan at first was to make two of these, but due to time and resources constraints we ended up with only one gauntlet to show the idea of what we are trying to achieve
 
 ## How it works and how we achieved that:
 
-As mentioned above, we have five choices in the magic circle and the gauntlet is there to show the user and the opponent what spell they are currently selecting from the magic circle. 
+As mentioned above, we have five choices in the magic circle and the gauntlet is there to show the user and the opponent what spell they are currently selecting from the magic circle. The spell shown in the gauntlet changes with spell chosen form magic circle.
+
+![](images/spells.gif)
 
 We used these three libraries to control the LED Matrix Adafruit_NeoMatrix, Adafruit_GFX and Adafruit_NeoPixel by configuring the code to match the specific LED Matrix we have. 
 
@@ -173,29 +175,31 @@ The client in the gauntlet code listens for player activation on mqtt and displa
 
 As you can see form the code, the callback function in mqtt is always listening for mqtt messages and if it receives "IDD/player{player_ID}/currentfocus", it looks for the index with 1 in it and the rest will be zeros. The index with one refers to a spell in the magic circle, so we display that on the gauntlet. Every display has a function inside the code to display that spell. 
 
-## Spells with their respective Gauntlet animation:
+# Spells with their respective Gauntlet animation:
 
-1. Pulse Magic
+## 1. Pulse Magic
 
-@Omar Insert image here
+![](images/pulseMagic.jpeg)
 
 Pulse magic symbol was manually drawn on the LED Matrix and hardcoded using a function that we made that takes in all Xs and Ys of the pixels to light up and the color of all the pixels. This was done as bitmapping proved to be challenging when it came to something as unique as this project.
 
-2. Shield
+![](images/pulseDrawing.JPG)
 
-@Omar Insert image here
+## 2. Shield
+
+![](images/shield.jpeg)
 
 Shield was also hardocded to show the specific unique symbol for it.
 
-Shield was also
+![](images/shieldDrawing.JPG)
 
-3. Beam Magic
+## 3. Beam Magic
 
-@Omar Insert image here
+![](images/beamGif.gif)
 
 For Beam Magic, we used green lines from the center that span out to the outside to show a powerful continuous spell that.
 
-4. Special Attack
+## 4. Special Attack
 
 The special attack is resembling Dr.Strange's time stone effect when it is activated which is why the gauntlet shows continuous arrows rotating around the hand
 
@@ -203,11 +207,10 @@ DR. Strange:
 ![](images/specialAttack.png)
 
 Our Implementation:
-@Omar Insert image here
 
-5. Health Display
+![](images/specialAttackGif.gif)
 
-@Omar Insert image here
+## 5. Health Display
 
 The health is displayed by having all pixels lit at full health and decreasing with health lost. The color of pixels change from green when above 66/100 to yellow between 33 and 66 to red when below 33.
 
