@@ -252,6 +252,7 @@ Reflecting on what we achieved, we see a foundation for future exploration. The 
 ### Conclusion
 In conclusion, "Strange Battle" was a testament to our collective vision, technical abilities, and collaborative spirit. It was a journey filled with challenges, learning, and, most importantly, a shared passion for innovation. As we move forward, we carry with us the lessons learned and the satisfaction of having turned a concept into a reality.
 
+# Link to Video: https://www.youtube.com/shorts/pA03HzGWB_s
 
 ## Contributors
 - Siddharth Kothari (sk2793)
