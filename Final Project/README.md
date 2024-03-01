@@ -1,6 +1,6 @@
 # Final Project: Strange Battle
 
-**Link to Video: https://www.youtube.com/shorts/pA03HzGWB_s**
+**Link to Video: https://www.youtube.com/watch?v=pz4rgUYJ8hY**
 
 
 ## Project Overview
